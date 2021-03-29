@@ -4,6 +4,7 @@ import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.bridge.ReactContextBaseJavaModule
 import com.facebook.react.bridge.ReactMethod
 import com.facebook.react.bridge.Promise
+import com.google.android.ads.mediationtestsuite.MediationTestSuite
 
 class MediationTestSuiteModule(reactContext: ReactApplicationContext) : ReactContextBaseJavaModule(reactContext) {
 
@@ -11,13 +12,9 @@ class MediationTestSuiteModule(reactContext: ReactApplicationContext) : ReactCon
         return "MediationTestSuite"
     }
 
-    // Example method
-    // See https://reactnative.dev/docs/native-modules-android
     @ReactMethod
-    fun multiply(a: Int, b: Int, promise: Promise) {
-    
-      promise.resolve(a * b)
-    
+    fun launch() {
+        MediationTestSuite.launch(getCurrentActivity());
     }
 
     

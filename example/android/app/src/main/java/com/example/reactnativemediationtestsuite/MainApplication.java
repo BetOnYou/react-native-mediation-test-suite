@@ -11,8 +11,15 @@ import com.facebook.soloader.SoLoader;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 import com.reactnativemediationtestsuite.MediationTestSuitePackage;
+import androidx.multidex.MultiDex;
 
 public class MainApplication extends Application implements ReactApplication {
+
+  @Override
+  protected void attachBaseContext(Context base) {
+    super.attachBaseContext(base);
+    MultiDex.install(this);
+  }
 
   private final ReactNativeHost mReactNativeHost =
       new ReactNativeHost(this) {

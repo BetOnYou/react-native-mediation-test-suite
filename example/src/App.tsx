@@ -1,19 +1,17 @@
 import * as React from 'react';
 
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, Button } from 'react-native';
 import MediationTestSuite from 'react-native-mediation-test-suite';
 
-
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    MediationTestSuite.multiply(3, 7).then(setResult);
-  }, []);
-
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Button
+        title="Open Mediation Test Suite"
+        onPress={() => {
+          MediationTestSuite.launch();
+        }}
+      />
     </View>
   );
 }
