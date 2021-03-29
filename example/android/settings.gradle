@@ -1,0 +1,6 @@
+rootProject.name = 'MediationTestSuiteExample'
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
+
+include ':reactnativemediationtestsuite'
+project(':reactnativemediationtestsuite').projectDir = new File(rootProject.projectDir, '../../android')
