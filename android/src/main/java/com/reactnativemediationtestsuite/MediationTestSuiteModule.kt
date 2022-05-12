@@ -17,5 +17,8 @@ class MediationTestSuiteModule(reactContext: ReactApplicationContext) : ReactCon
         MediationTestSuite.launch(getCurrentActivity());
     }
 
-    
+    @ReactMethod
+    fun launchForAdManager() {
+        MediationTestSuite.launchForAdManager(getCurrentActivity());
+    }
 }

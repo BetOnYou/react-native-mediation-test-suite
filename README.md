@@ -23,6 +23,17 @@ MediationTestSuite.launch();
 
 See example project in https://github.com/BetOnYou/react-native-mediation-test-suite/blob/master/example/src/App.tsx
 
+### Ad Manager
+
+You can launch mediation test suite for Ad Manager as well.
+
+```js
+import MediationTestSuite from "react-native-mediation-test-suite";
+
+// ...
+MediationTestSuite.launchForAdManager();
+```
+
 ## Contributing
 
 See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.

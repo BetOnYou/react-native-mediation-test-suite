@@ -16,4 +16,10 @@ RCT_EXPORT_METHOD(launch)
   [GoogleMobileAdsMediationTestSuite presentOnViewController:rootViewController delegate:nil];
 }
 
+RCT_EXPORT_METHOD(launchForAdManager)
+{
+  UIViewController *rootViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
+  [GoogleMobileAdsMediationTestSuite presentForAdManagerOnViewController:rootViewController delegate:nil];
+}
+
 @end
