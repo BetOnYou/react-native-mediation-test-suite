@@ -404,7 +404,7 @@ PODS:
     - React-cxxreact (= 0.63.4)
     - React-jsi (= 0.63.4)
   - React-jsinspector (0.63.4)
-  - react-native-mediation-test-suite (0.1.0):
+  - react-native-mediation-test-suite (0.2.1):
     - GoogleMobileAdsMediationTestSuite
     - React-Core
   - React-RCTActionSheet (0.63.4):
@@ -639,7 +639,7 @@ SPEC CHECKSUMS:
   React-jsi: a0418934cf48f25b485631deb27c64dc40fb4c31
   React-jsiexecutor: 93bd528844ad21dc07aab1c67cb10abae6df6949
   React-jsinspector: 58aef7155bc9a9683f5b60b35eccea8722a4f53a
-  react-native-mediation-test-suite: b9650e97b3af2f778cf9acb3817b9d1b1e25de87
+  react-native-mediation-test-suite: d8f2deddb3d4f53e7e05643e3034238670627bbd
   React-RCTActionSheet: 89a0ca9f4a06c1f93c26067af074ccdce0f40336
   React-RCTAnimation: 1bde3ecc0c104c55df246eda516e0deb03c4e49b
   React-RCTBlob: a97d378b527740cc667e03ebfa183a75231ab0f0
@@ -655,4 +655,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: b300ba7ce81efd2c272e15b47a8b5749baa79b57
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.3
